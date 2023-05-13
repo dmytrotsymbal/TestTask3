@@ -24,6 +24,11 @@
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .images {
@@ -35,6 +40,25 @@
   cursor: pointer;
 }
 
+.crossBtn {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 60px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+}
+
+.crossBtn:hover {
+  background-color: rgb(178, 185, 191);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
 .first-in-row img {
   border: 5px solid red;
 }
@@ -42,6 +66,27 @@
 .images:hover {
   border: 5px solid yellow;
   transform: rotate(45deg);
+}
+
+.reshow {
+  width: 150px;
+  height: 50px;
+  margin-left: calc(50% - 150px / 2);
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: goldenrod;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.reshow:hover {
+  background-color: #ffa500;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
 }
 
 /* __________________________________________________________________________________________ */

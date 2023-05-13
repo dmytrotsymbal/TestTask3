@@ -1,0 +1,123 @@
+.global {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flagsCol {
+  width: 400px;
+  height: 900px;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ukraine {
+  width: 300px;
+  height: 200px;
+}
+
+.blue {
+  background-color: #0057b7;
+  width: 300px;
+  height: 100px;
+}
+
+.yellow {
+  width: 300px;
+  height: 100px;
+  background-color: #ffd700;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.japan {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.island {
+  width: 300px;
+  height: 200px;
+  background-color: #02529c;
+  position: relative;
+}
+
+.verticalLineWhite {
+  width: 40px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  left: 75px;
+}
+
+.redVertical {
+  position: absolute;
+  width: 20px;
+  left: calc(50% - 20px / 2);
+  height: 200px;
+  background-color: red;
+  z-index: 2;
+}
+
+.horizontalLineWhite {
+  width: 300px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  top: calc(50% - 40px / 2);
+}
+
+.redHorizontal {
+  position: absolute;
+  width: 300px;
+  top: calc(50% - 20px / 2);
+  height: 20px;
+  background-color: red;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.czech {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.white {
+  width: 300px;
+  height: 100px;
+  background-color: white;
+}
+
+.red {
+  width: 300px;
+  height: 100px;
+  background-color: red;
+}
+
+.triangle {
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 130px solid #0057b7;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+}

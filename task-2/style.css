@@ -2,6 +2,20 @@
   border: 1px solid black;
 }
 
+.title {
+  margin-bottom: 50px;
+  margin-top: 15px;
+  color: black;
+  text-align: center;
+}
+
+.timeSubTitle {
+  margin-bottom: 60px;
+  margin-top: 15px;
+  color: rgb(96, 65, 65);
+  text-align: center;
+}
+
 .row {
   width: 100%;
 }
@@ -28,4 +42,73 @@
 .images:hover {
   border: 5px solid yellow;
   transform: rotate(45deg);
+}
+
+/* __________________________________________________________________________________________ */
+
+.popupContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.popupMenu {
+  width: 800px;
+  height: 800px;
+  padding: 20px;
+  background-color: rgb(213, 196, 196);
+  position: relative;
+  left: calc(50% - 800px / 2);
+  top: 40px;
+}
+
+/* воно виглядає огидно якщо дати повні розміри як ви написали в умові, 
+я вирішив трішки по своємо зробити і дав фіксовані розміри */
+
+.popupImg {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 700px / 2);
+  z-index: 50;
+}
+
+.closeBtn {
+  position: absolute;
+  left: calc(50% - 200px / 2);
+  bottom: 30px;
+  width: 200px;
+  height: 30px;
+  border: 0;
+  background-color: rgb(161, 161, 226);
+}
+
+/* цей ховерний градієнт взяв з безкоштовного макету у фігмі, 
+я сам такі речі не вмію робити =) */
+
+.closeBtn:hover {
+  background-color: rgb(161, 161, 226);
+  background-image: linear-gradient(
+    135deg,
+    rgba(161, 161, 226, 1) 0%,
+    rgba(196, 196, 255, 1) 100%
+  );
+  transition: background-color ease-in-out;
+  transition: 0.7s;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }

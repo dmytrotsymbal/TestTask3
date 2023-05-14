@@ -8,12 +8,13 @@
   border-bottom: 1px solid black;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-p {
-  width: 200px;
+p,
+a {
+  width: 170px;
 }
 
 #input {
@@ -22,4 +23,14 @@ p {
   margin-left: calc(50% - 200px / 2);
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.countBlock {
+  width: 150px;
+  margin-left: calc(50% - 150px / 2);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid black;
 }

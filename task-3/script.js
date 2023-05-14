@@ -1,4 +1,6 @@
 let input = document.querySelector("#input");
+let reset = document.querySelector(".reset");
+console.log(reset);
 
 input.addEventListener("input", (e) => {
   countryName = e.target.value;
@@ -38,6 +40,21 @@ input.addEventListener("input", (e) => {
         let univDomains = document.createElement("p");
         univDomains.innerHTML = JSON.stringify(element.domains[0]);
         oneUnivEl.appendChild(univDomains);
+
+        //CHECKBOX--------------------------------------------------
+        let checkbox = document.createElement("button");
+        checkbox.innerHTML = "Save to favorites";
+        oneUnivEl.appendChild(checkbox);
+        let counter = document.querySelector(".counter");
+
+        checkbox.addEventListener("click", function () {
+          counter.innerHTML = parseInt(counter.innerHTML) + 1;
+          checkbox.disabled = true;
+        });
       });
     });
+});
+
+reset.addEventListener("click", function () {
+  location.reload();
 });

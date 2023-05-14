@@ -17,6 +17,31 @@ a {
   width: 170px;
 }
 
+.addToFavBtn {
+  height: 30px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25, 118, 210);
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.addToFavBtn:hover {
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.checked {
+  background-color: rgb(182, 181, 181);
+  cursor: not-allowed;
+}
+.checked:hover {
+  box-shadow: none;
+}
+
 #input {
   width: 200px;
   height: 20px;
@@ -33,4 +58,25 @@ a {
   flex-direction: row;
   justify-content: space-around;
   border: 1px solid black;
+}
+
+.reset {
+  width: 100px;
+  margin-left: calc(50% - 100px / 2);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset:hover {
+  transition: 0.4s;
+  background-color: #d2c4c4;
+  color: #333;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }

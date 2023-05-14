@@ -44,12 +44,14 @@ input.addEventListener("input", (e) => {
         //CHECKBOX--------------------------------------------------
         let checkbox = document.createElement("button");
         checkbox.innerHTML = "Save to favorites";
+        checkbox.classList.add("addToFavBtn");
         oneUnivEl.appendChild(checkbox);
         let counter = document.querySelector(".counter");
 
         checkbox.addEventListener("click", function () {
           counter.innerHTML = parseInt(counter.innerHTML) + 1;
-          checkbox.disabled = true;
+          checkbox.classList.add("checked");
+          checkbox.innerHTML = "Saved";
         });
       });
     });

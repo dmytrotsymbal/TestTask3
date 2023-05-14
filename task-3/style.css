@@ -1,0 +1,25 @@
+.table {
+  width: 1200px;
+  margin-left: calc(50% - 1200px / 2);
+  border: 1px solid black;
+}
+
+.oneUniv {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  width: 200px;
+}
+
+#input {
+  width: 200px;
+  height: 20px;
+  margin-left: calc(50% - 200px / 2);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

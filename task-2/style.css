@@ -34,7 +34,7 @@
 .images {
   width: 80%;
   height: 230px;
-  border: 5px solid rgb(83, 70, 70);
+  border: 5px solid rgb(183, 166, 166);
   border-radius: 90%;
   transition: transform 1.5s;
   cursor: pointer;

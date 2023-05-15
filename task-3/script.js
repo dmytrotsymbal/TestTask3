@@ -49,9 +49,15 @@ input.addEventListener("input", (e) => {
         let counter = document.querySelector(".counter");
 
         checkbox.addEventListener("click", function () {
-          counter.innerHTML = parseInt(counter.innerHTML) + 1;
-          checkbox.classList.add("checked");
-          checkbox.innerHTML = "Saved";
+          if (checkbox.classList.contains("checked")) {
+            counter.innerHTML = parseInt(counter.innerHTML) - 1;
+            checkbox.classList.remove("checked");
+            checkbox.innerHTML = "Save to favorites";
+          } else {
+            counter.innerHTML = parseInt(counter.innerHTML) + 1;
+            checkbox.classList.add("checked");
+            checkbox.innerHTML = "Saved";
+          }
         });
       });
     });
